@@ -17,10 +17,9 @@ jobs:
         key: ${{ secrets.KEY }}
         port: 22
         script: |
-          whoami
-          ls -al
-          cd nodejs-ci-cd
-          pwd
+          export NVM_DIR="$HOME/.nvm"
+          [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+          cd nodejs-ci-cd/
           git pull origin master
           git status
           npm install --only=prod
