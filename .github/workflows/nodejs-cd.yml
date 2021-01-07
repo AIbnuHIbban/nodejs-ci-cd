@@ -20,6 +20,7 @@ jobs:
           whoami
           ls -al
           cd nodejs-ci-cd
+          pwd
           git pull origin master
           git status
           npm install --only=prod
