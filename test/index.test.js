@@ -19,7 +19,7 @@ describe('Get Endpoint Me', () => {
     // expect(res.text).toEqual('Hi Abdullah!')
 
     // res.body  jika di Route return res.json
-    expect(res.body.content).toEqual('ME')
+    expect(res.body.status).toEqual('ok')
     done()
   })
 })
