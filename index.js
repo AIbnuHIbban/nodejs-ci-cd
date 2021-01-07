@@ -13,12 +13,12 @@ app.get('/me', (req, res) => {
   })
 })
 
-// app.get('/you', (req, res) => {
-//   res.json({
-//   	'status'	: 'ok',
-//   	'content'	: 'YOU'
-//   })
-// })
+app.get('/you', (req, res) => {
+  res.json({
+  	'status'	: 'ok',
+  	'content'	: 'YOU'
+  })
+})
 
 app.listen(port, () => {
   console.log(`listening at http://localhost:${port}`)

@@ -22,14 +22,14 @@ describe('Get Endpoint Me', () => {
   })
 })
 
-// describe('Get Endpoint You', () => {
-//   it('should return route /you', async (done) => {
-//     const res = await request(app).get('/you')
-//     expect(res.statusCode).toEqual(200)
-//     // res.text  jika di Route  return res.send
-//     // expect(res.text).toEqual('Hi Abdullah!')
-//     // res.body  jika di Route return res.json
-//     expect(res.body.content).toEqual('YOU')
-//     done()
-//   })
-// })
+describe('Get Endpoint You', () => {
+  it('should return route /you', async (done) => {
+    const res = await request(app).get('/you')
+    expect(res.statusCode).toEqual(200)
+    // res.text  jika di Route  return res.send
+    // expect(res.text).toEqual('Hi Abdullah!')
+    // res.body  jika di Route return res.json
+    expect(res.body.content).toEqual('YOU')
+    done()
+  })
+})
