@@ -16,4 +16,10 @@ jobs:
         username: ${{ secrets.USERNAME }}
         key: ${{ secrets.KEY }}
         port: 22
-        script: whoami
+        script: |
+          cd nodejs-ci-cd
+          git pull origin master
+          git status
+          npm install --only=prod
+          pm2 restart index.js
+          
