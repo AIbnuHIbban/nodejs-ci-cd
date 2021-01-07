@@ -14,8 +14,10 @@ describe('Get Endpoint Me', () => {
   it('should return route /me', async (done) => {
     const res = await request(app).get('/me')
     expect(res.statusCode).toEqual(200)
+    
     // res.text  jika di Route  return res.send
     // expect(res.text).toEqual('Hi Abdullah!')
+
     // res.body  jika di Route return res.json
     expect(res.body.content).toEqual('ME')
     done()
