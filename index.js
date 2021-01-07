@@ -9,7 +9,7 @@ app.get('/', (req, res) => {
 app.get('/me', (req, res) => {
   res.json({
   	'status'	: 'ok',
-  	'content'	: 'My Name is Abdullah'
+  	'content'	: 'Hi Abdullah!'
   })
 })
 
